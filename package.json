@@ -1,6 +1,6 @@
 {
   "name": "hubot-figlet",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "hubot generate figlet",
   "main": "index.coffee",
   "scripts": {
