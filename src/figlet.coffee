@@ -20,5 +20,4 @@ module.exports = (robot) ->
       msg.send "Usage: hubot figlet <word>"
       return
     figlet = require('figlet')
-    figlet input, (err, output) ->
-        msg.send output
+    msg.send figlet.textSync input
