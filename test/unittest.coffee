@@ -38,7 +38,7 @@ describe 'hubot', ->
   describe 'figlet', ->
     it 'should send figlet result', (done)->
       adapter.on 'send', (env, str)->
-        result = "   __ _       _      _   \n  / _(_) __ _| | ___| |_ \n | |_| |/ _` | |/ _ \\ __|\n |  _| | (_| | |  __/ |_ \n |_| |_|\\__, |_|\\___|\\__|\n        |___/            "
+        result = "```   __ _       _      _   \n  / _(_) __ _| | ___| |_ \n | |_| |/ _` | |/ _ \\ __|\n |  _| | (_| | |  __/ |_ \n |_| |_|\\__, |_|\\___|\\__|\n        |___/            ```"
         expect(str[0]).to.equal result
         do done
       adapter.receive new TextMessage user, 'hubot figlet figlet'
